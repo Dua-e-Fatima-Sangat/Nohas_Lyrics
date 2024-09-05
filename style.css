@@ -56,13 +56,13 @@ a.button:hover {
     background-color: #ff6666; /* Lighter red on hover */
 }
 
-/* Media query for phone screens */
-@media (max-width: 600px) {
+/* Media query for slightly larger screens (up to 800px wide) */
+@media (max-width: 800px) {
     table {
-        width: 90%; /* Increase the table width to 90% on small screens */
+        width: 90%; /* Increase the table width to 90% on larger mobile screens */
     }
 
     th, td {
-        padding: 8px; /* Reduce padding slightly to fit better on smaller screens */
+        padding: 8px; /* Slightly reduce padding for better fit */
     }
 }
