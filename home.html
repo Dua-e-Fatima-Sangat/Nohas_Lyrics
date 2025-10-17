@@ -14,17 +14,22 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            padding: 0 10px;
+            box-sizing: border-box;
+            text-align: center;
         }
 
         h1 {
             color: #e60000;
             margin-bottom: 40px;
-            text-align: center;
+            font-size: 2em;
         }
 
         .button-container {
             display: flex;
-            gap: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
 
         .option-btn {
@@ -35,11 +40,13 @@
             border-radius: 8px;
             font-size: 1.2em;
             font-weight: bold;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
+            min-width: 220px;
         }
 
         .option-btn:hover {
             background-color: #b30000;
+            transform: scale(1.05);
         }
 
         footer {
@@ -50,6 +57,32 @@
             background-color: #333;
             color: white;
             padding: 10px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                justify-content: flex-start;
+                padding-top: 100px;
+                height: auto;
+            }
+
+            h1 {
+                font-size: 1.6em;
+                margin-bottom: 30px;
+            }
+
+            .option-btn {
+                font-size: 1em;
+                padding: 15px 25px;
+                min-width: 180px;
+            }
+
+            footer {
+                position: relative;
+                margin-top: 50px;
+            }
         }
     </style>
 </head>
