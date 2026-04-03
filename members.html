@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sangat Members</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{
+      --gap: 1rem;
+      --avatar-size: 120px;
+      --accent: #ff0000;
+      --muted: #cccccc;
+      --bg: #000000;
+    }
+
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #000000;
+      margin: 0;
+      padding: 2rem;
+      color: #ffffff;
+    }
+
+    .container{
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    h1{
+      font-size: 1.25rem;
+      margin: 0 0 1rem 0;
+    }
+
+    .members-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: var(--gap);
+      align-items: start;
+    }
+
+    .member{
+      background: #111;
+      border: 2px solid #ff0000;
+      border-radius: 14px;
+      padding: 1rem;
+      text-align: center;
+      color: #ffffff;
+      box-shadow: 0 1px 2px rgba(255,0,0,0.2), 0 6px 20px rgba(255,0,0,0.25);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .member:focus-within,
+    .member:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+    }
+
+    .avatar{
+      width: var(--avatar-size);
+      height: var(--avatar-size);
+      border-radius: 50%;
+      object-fit: cover;
+      display: inline-block;
+      box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+      transition: transform .18s ease;
+    }
+
+    .member:focus-within .avatar,
+    .member:hover .avatar{
+      transform: scale(1.03);
+    }
+
+    figure{ margin: 0; }
+
+    figcaption{
+      margin-top: 0.65rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #ffffff;
+    }
+
+    .role{
+      display: block;
+      font-size: 0.8rem;
+      color: #ffcccc;
+      margin-top: 0.25rem;
+      font-weight: 500;
+    }
+
+    /* small responsive tweaks */
+    @media (max-width:420px){
+      :root{ --avatar-size: 96px; }
+      .members-grid{ grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sangat Members</h1>
+
+    <div class="members-grid" role="list">
+
+      <!-- member 1 -->
+      <figure class="member" role="listitem">
+        <img class="avatar" src="images/wasi.jpeg" alt="wasi">
+        <figcaption>
+          Wasi Haider Kazmi
+        </figcaption>
+      </figure>
+
+      <!-- member 2 -->
+      <figure class="member" role="listitem">
+        <img class="avatar" src="images/baqir.jpeg" alt="baqir">
+        <figcaption>
+          Baqir Abbas Kazmi
+        </figcaption>
+      </figure>
+
+      <!-- member 3 -->
+      <figure class="member" role="listitem">
+        <img class="avatar" src="images/hadi.jpeg" alt="hadi">
+        <figcaption>
+          Hadi Hassan Kazmi
+        </figcaption>
+      </figure>
+
+      <!-- member 4 -->
+      <figure class="member" role="listitem">
+        <img class="avatar" src="images/asad.jpeg" alt="asad">
+        <figcaption>
+          Asad Raza Kazmi
+        </figcaption>
+      </figure>
+
+      <!-- member 5 (example placeholder) -->
+      <figure class="member" role="listitem">
+        <img class="avatar" src="images/kumail.jpeg" alt="kumail">
+        <figcaption>
+          Muhammad Kumail Kazmi
+        </figcaption>
+      </figure>
+
+        <figure class="member" role="listitem">
+        <img class="avatar" src="images/unknown.JPG" alt="basit">
+        <figcaption>
+          Basit Ali <br> Kazmi
+        </figcaption>
+      </figure>
+
+
+        <!-- member 6 (example placeholder) -->
+      <figure class="member" role="listitem">
+        <img class="avatar" src="images/alihussain.jpeg" alt="alihussain">
+        <figcaption>
+          Ali Hussain Kazmi
+        </figcaption>
+      </figure>
+
+      <figure class="member" role="listitem">
+        <img class="avatar" src="images/qasim.jpeg" alt="qasim">
+        <figcaption>
+          Qasim Hassan Kazmi
+        </figcaption>
+      </figure>
+
+        <figure class="member" role="listitem">
+        <img class="avatar" src="images/zamin.jpeg" alt="zamin">
+        <figcaption>
+          Zamin Abbas Kazmi
+        </figcaption>
+      </figure>
+
+      <figure class="member" role="listitem">
+        <img class="avatar" src="images/ali-sher.jpeg" alt="ali-sher">
+        <figcaption>
+          Ali Sher<br> Kazmi
+        </figcaption>
+      </figure>
+
+        <figure class="member" role="listitem">
+        <img class="avatar" src="images/fraz.jpeg" alt="fraz">
+        <figcaption>
+          Fraz Ali <br> Kazmi
+        </figcaption>
+      </figure>
+
+        <figure class="member" role="listitem">
+        <img class="avatar" src="images/zulfiqar.jpeg" alt="zulfiqar">
+        <figcaption>
+          Zulfiqar Ali <br> Kazmi
+        </figcaption>
+      </figure>
+
+        <figure class="member" role="listitem">
+        <img class="avatar" src="images/moshif.jpeg" alt="moshif">
+        <figcaption>
+          Moshif Ali <br> Zaidi
+        </figcaption>
+      </figure>
+
+        <figure class="member" role="listitem">
+        <img class="avatar" src="images/mhtshm.jpeg" alt="mhtshm">
+        <figcaption>
+          Mohtishim Ali Zaidi
+        </figcaption>
+      </figure>
+
+
+
+    </div>
+  </div>
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="home.html" class="button">Back to Home Page</a>
+    </div>
+</body>
+</html>
