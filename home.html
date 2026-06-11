@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sangat Dua-e-Fatima</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +18,17 @@
             padding: 0 10px;
             box-sizing: border-box;
             text-align: center;
+        }
+
+        /* Sangat Profile Image */
+        .profile-image {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 4px solid #e60000;
+            box-shadow: 0 0 20px rgba(230, 0, 0, 0.7);
         }
 
         h1 {
@@ -60,12 +72,16 @@
             font-size: 0.9em;
         }
 
-        /* Responsive styles for smaller screens */
         @media (max-width: 600px) {
             body {
                 justify-content: flex-start;
-                padding-top: 100px;
+                padding-top: 50px;
                 height: auto;
+            }
+
+            .profile-image {
+                width: 110px;
+                height: 110px;
             }
 
             h1 {
@@ -87,22 +103,28 @@
     </style>
 </head>
 <body>
+
+    <!-- Sangat Logo/Profile -->
+    <img src="images/sangat-caligrap.png" alt="Sangat Dua-e-Fatima" class="profile-image">
+
     <h1>Welcome to Sangat Dua-e-Fatima</h1>
+
     <div class="button-container">
         <a href="index.html" class="option-btn">Nohas List</a>
-        <a href = "soz.html" class="option-btn">Soz List</a>
+        <a href="soz.html" class="option-btn">Soz List</a>
         <a href="shajra.html" class="option-btn">Shajra Kazmi Sadaat-e-Ludhiana</a>
         <a href="members.html" class="option-btn">Members</a>
-                <!-- New YouTube Playlist Button -->
+
         <a href="https://www.youtube.com/watch?v=4j1vkBzdueo&list=PLhfjY9U8bUFSvZetusM5KeM9F-ZrITYOh"
-        class="option-btn"
-        target="_blank">
-        Sangat Recordings
+           class="option-btn"
+           target="_blank">
+            Sangat Recordings
         </a>
     </div>
 
     <footer>
         &copy; 2026 Sangat Dua-e-Fatima
     </footer>
+
 </body>
 </html>
